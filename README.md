@@ -30,7 +30,7 @@ INSOMNIA, tanto faz.
 
 # 2 - Métodos
 
-### 1.1 – POST - Cadastrar pessoa
+### 2.1 – POST - Cadastrar pessoa
 
 http://localhost:8080/pessoas
 
@@ -47,7 +47,7 @@ fictícios de uma pessoa qualquer. Observação: o CPF não pode ser repetido.
  "regionalHemocentroResidencia": "PIRACICABA"
  }
  
-### 1.2 – PUT – Atualizar Pessoa
+### 2.2 – PUT – Atualizar Pessoa
 
 http://localhost:8080/pessoas
 
@@ -63,7 +63,7 @@ Esse PUT permite atualizar uma pessoa, cujo Id é especificado no body.
  "regionalHemocentroResidencia":"GRANDE_SAO_PAULO"
 }
 
-### 1.3 – POST – Cadastrar doação
+### 2.3 – POST – Cadastrar doação
 
 http://localhost:8080/doacoes
 
@@ -76,7 +76,7 @@ Esse post permite cadastrar numa nova doação.
  "regionalHemocentroDoacao":"GRANDE_SAO_PAULO"
  }
  
-### 1.4 – POST – Cadastrar transfusão
+### 2.4 – POST – Cadastrar transfusão
 
 http://localhost:8080/transfusoes
 
@@ -92,21 +92,21 @@ Esse POST permite cadastrar uma nova transfusão.
  "regionalHemocentroResidencia": "GRANDE_SAO_PAULO"
  }
  
-### 1.5 – GET - Listagem de pessoas ordenada por qtde de doacoes
+### 2.5 – GET - Listagem de pessoas ordenada por qtde de doacoes
 
 http://localhost:8080/pessoas/doacoes
 
 Esse GET permite obter a listagem de todas as pessoas cadastradas no sistema, ordenadas de acordo com a
 quantidade de doações realizadas.
 
-### 1.6 – GET - Listagem de pessoas ordenada por qtde de transfusoes
+### 2.6 – GET - Listagem de pessoas ordenada por qtde de transfusoes
 
 http://localhost:8080/pessoas/transfusoes
 
 Esse GET permite obter a listagem de todas as pessoas cadastradas no sistema, ordenadas de acordo com a
 quantidade de transfusões realizadas.
 
-### 1.7 – GET - Listar doacoes por Id de pessoa
+### 2.7 – GET - Listar doacoes por Id de pessoa
 
 http://localhost:8080/pessoas/doacoes/4
 
@@ -114,7 +114,7 @@ Esse GET permite obter todas as doações realizadas por uma pessoa com determin
 serão mostradas todas as doações realizadas pela pessoa de id "4". Basta mudar o número final da URL para
 mostrar as doações de outras pessoas.
 
-### 1.8 – GET Listar transfusoes por Id de pessoa
+### 2.8 – GET Listar transfusoes por Id de pessoa
 
 http://localhost:8080/pessoas/transfusoes/1
 

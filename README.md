@@ -4,14 +4,13 @@ Para rodar o projeto, você deve ter instalado o Java 17, Spring Boot 3.2.4 e o 
 conexão com o banco de dados é feita no arquivo “src/main/resources/application.properties”, que
 possui o conteúdo a seguir:
 
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/bancodesangue
+spring.datasource.username=root
+spring.datasource.password=root
 
->spring.jpa.hibernate.ddl-auto=update
->spring.datasource.url=jdbc:mysql://localhost:3306/bancodesangue
->spring.datasource.username=root
->spring.datasource.password=root
-
->spring.jpa.show-sql=true
->spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
 
 As propriedades “spring.datasource.url”, “spring.datasource.username” e “spring.datasource.password”
 devem ser alteradas de acordo com a sua instalação local do MySQL. O resto não deve ser alterado.

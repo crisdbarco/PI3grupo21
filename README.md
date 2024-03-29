@@ -5,11 +5,15 @@ conexão com o banco de dados é feita no arquivo “src/main/resources/applicat
 possui o conteúdo a seguir:
 
 spring.jpa.hibernate.ddl-auto=update
+
 spring.datasource.url=jdbc:mysql://localhost:3306/bancodesangue
+
 spring.datasource.username=root
+
 spring.datasource.password=root
 
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.format_sql=true
 
 As propriedades “spring.datasource.url”, “spring.datasource.username” e “spring.datasource.password”

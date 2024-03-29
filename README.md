@@ -22,7 +22,7 @@ devem ser alteradas de acordo com a sua instalação local do MySQL. O resto nã
 ### 1.2 - Diagrama de classes:
 Segue o link do diagrama de classes do projeto.
 
-https://online.visualparadigm.com/share.jsp?id=333136323233352d31#diagram:workspace=vyeinsqz&proj=0&id=1
+https://online.visual-paradigm.com/share.jsp?id=333136323233352d31
 
 ### 1.3 - Software para enviar/receber as requisições
 Para enviar/receber as requisições descritas a seguir, podem ser usados os softwares POSTMAN ou

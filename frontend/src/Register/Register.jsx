@@ -24,7 +24,7 @@ function Register() {
   const [telefone, setTelefone] = useState("");
   const [doador, setDoador] = useState("");
   const [rua, setRua] = useState("");
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
 
   const navigate = useNavigate();
   const register = () => {
@@ -47,8 +47,7 @@ function Register() {
       <Label for="nome"> Nome</Label>
             <Input valid className="register__textBox"   value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome completo"/> 
         </FormGroup>
-
-        <Col md={6}>
+         <Col md={6}>
         <FormGroup>
         <Label for="nome"> Data de Nascimento</Label>
         <Input type="date" className="register__textBox" valid value={dataNascimento}

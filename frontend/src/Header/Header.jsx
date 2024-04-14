@@ -37,7 +37,7 @@ export default class Header extends React.Component {
            <Collapse isOpen={this.state.isOpen} navbar>
              <Nav className="ml-auto" navbar>
                <NavItem>
-                 <NavLink style={{ color: '#ffff' }} href="/components/">Sobre</NavLink>
+                 <NavLink style={{ color: '#ffff' }} href="/Sobre">Sobre</NavLink>
                </NavItem>
                <NavItem>
                  <NavLink style={{ color: '#ffff' }} href="/Login">Login</NavLink>
@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                  <DropdownToggle style={{ color: '#ffff' }} nav caret>
                  Doe Sangue
                  </DropdownToggle>
-                 <DropdownMenu right>
+                 <DropdownMenu end>
                    <DropdownItem>
                    Option 1
                    </DropdownItem>

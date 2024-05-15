@@ -1,28 +1,22 @@
-.re.dashboard {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .dashboard__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  background-color: #dcdcdc;
+  background-color: #d01609c2;
   padding: 30px;
 }
 
-.dashboard__btn {
-  padding: 10px;
-  font-size: 18px;
-  margin-top: 10px;
-  border: none;
-  color: white;
-  background-color: black;
+.dashboard__container > div {
+  margin-bottom: 20px;
 }
 
-.dashboard div {
-  margin-top: 7px;
+.gratitude-image {
+  width: 90%; /* Ajuste conforme necessário */
+  height: auto;
+  margin-bottom: 20px;
+}
+.text-message {
+  font-size: larger;
+  font-family: DM-Sans, sans-serif;
 }

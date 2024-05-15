@@ -10,12 +10,26 @@ import Avatar3 from './../assets/avatar3.png'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { useEffect } from 'react'; 
 
+function Home() {
+    useEffect(() => {
+        
+        // eslint-disable-next-line no-undef
+        const carousel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'), {
+            interval: 2000 
+        });
 
-function Home() { 
-	return ( 
-    <> 
-    <div id="carouselExampleIndicators" class="carousel slide">
+        
+        return () => {
+            carousel.dispose();
+        };
+    }, []);
+
+    return (
+        <>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

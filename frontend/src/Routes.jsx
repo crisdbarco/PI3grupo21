@@ -4,7 +4,8 @@ import Register from './Register/Register';
 import Reset from './Reset.css';
 import Dashboard from './Dashboard/Dashboard';
 import Home from './Home/Home'
-// import Header from "./Header/Header";
+import Sobre from './Sobre/Sobre'
+import Contato from "./Contato/Contato";
 
 function Routes(){
     return(
@@ -15,6 +16,8 @@ function Routes(){
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/reset" element={<Reset />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/sobre" element={<Sobre />} />
+            <Route exact path="/Contato" element={<Contato />} />
         </Router>
            
         

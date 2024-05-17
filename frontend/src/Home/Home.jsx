@@ -7,7 +7,7 @@ import Boneco from './../assets/boneco.png'
 import Avatar1 from './../assets/avatar1.avif'
 import Avatar2 from './../assets/avatar2.avif'
 import Avatar3 from './../assets/avatar3.png'
-
+import "./StyleHome.css"
 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';

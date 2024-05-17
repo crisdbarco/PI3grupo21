@@ -36,9 +36,10 @@ function Dashboard() {
       <div className="dashboard__container">
         <div className="text-message">
           <p className="text-message">Obrigado pela sua doação de sangue, {name}!</p>
+          <div>{user?.email}</div>
         </div>
         <img
-          src="https://portal.fiocruz.br/sites/portal.fiocruz.br/files/imagemTopo/doacao_sangue_iff_interna.jpg"
+          src="https://www.florence.edu.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-13-at-14.27.20-600x400.jpeg"
           alt="Imagem de gratidão"
           className="gratitude-image"
         />

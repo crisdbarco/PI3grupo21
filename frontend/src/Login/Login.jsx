@@ -15,6 +15,7 @@ function Login() {
       return;
     }
     if (user) navigate("/dashboard");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, loading]);
   return (
     <div className="login">

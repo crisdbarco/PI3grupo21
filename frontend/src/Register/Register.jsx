@@ -29,7 +29,8 @@ function Register() {
   const navigate = useNavigate();
   const register = () => {
     if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(name, email, password);
+    registerWithEmailAndPassword(email, password, name);
+
   };
   useEffect(() => {
     if (loading) return;
@@ -148,4 +149,5 @@ function Register() {
     </div>
   );
 }
+
 export default Register;

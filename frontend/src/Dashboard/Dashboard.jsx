@@ -6,18 +6,11 @@ import { auth, db, logout } from "../firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 
 function Dashboard() {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [name, setName] = useState("");
-  // const [cadastro, setCadastro] = useState('')
   const navigate = useNavigate();
 
-  // useEffect(()=>{
-  //   const getCadastro = async()=>{
-  //     const data = await getDocs(cadastroCollection)
-  //   }
-  // })
-
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchUserName = async () => {
     try {
       const q = query(collection(db, "users"), where("uid", "==", user?.uid));
@@ -27,7 +20,7 @@ function Dashboard() {
       setName(data.name);
     } catch (err) {
       console.error(err);
-      alert("An error occured while fetching user data");
+      alert("An error occurred while fetching user data");
     }
   };
 
@@ -36,14 +29,21 @@ function Dashboard() {
     if (!user) return navigate("/");
 
     fetchUserName();
-  }, [user, loading]);
+  }, [user, loading, navigate, fetchUserName]);
 
   return (
     <div className="dashboard">
       <div className="dashboard__container">
-        Logado com
-        <div>{name}</div>
-        <div>{user?.email}</div>
+        <div className="text-message">
+          <p className="text-message">Obrigado pela sua doação de sangue, {name}!</p>
+          <div>{user?.email}</div>
+        </div>
+        <img
+          src="https://www.florence.edu.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-13-at-14.27.20-600x400.jpeg"
+          alt="Imagem de gratidão"
+          className="gratitude-image"
+        />
+       
         <button className="dashboard__btn" onClick={logout}>
           Sair
         </button>

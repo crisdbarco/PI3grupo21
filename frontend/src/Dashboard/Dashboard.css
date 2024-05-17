@@ -1,28 +1,30 @@
-.re.dashboard {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .dashboard__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  background-color: #dcdcdc;
-  padding: 30px;
+  background-color: #d01609c2;
+  padding: 16px;
 }
 
+.dashboard__container > div {
+  margin-bottom: 20px;
+}
+
+.gratitude-image {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.text-message {
+  font-size: 20px;
+  font-family: DM-Sans, sans-serif;
+  color: black;
+}
 .dashboard__btn {
-  padding: 10px;
-  font-size: 18px;
-  margin-top: 10px;
-  border: none;
-  color: white;
-  background-color: black;
-}
-
-.dashboard div {
-  margin-top: 7px;
+  color: black;
+  background-color: rgba(11, 96, 224, 0.748);
 }
